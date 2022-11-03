@@ -1,1 +1,5 @@
-hola mundo visita mi blog aqui <a href="{% url 'blog:home' %}">blog</a>
+{% extends 'base.html' %}
+
+{% block content  %}
+ hola mundo visita mi blog aqui <a class="text-blue-700" href="{% url 'blog:home' %}">blog</a>
+{% endblock %}

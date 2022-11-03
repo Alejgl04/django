@@ -1,3 +1,9 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  
+  
 blog list
 <br>
 {% for post in posts %}
@@ -9,4 +15,7 @@ blog list
 
 {% endfor %}
 <br>
-<a href="{% url 'blog:create' %}">Create a Post</a>
+<a href="{% url 'blog:create' %}" class="relative bg-blue-500 text-white p-3 rounded text-2xl overflow-hidden">Create a Post</a>
+
+{% endblock content %}
+
