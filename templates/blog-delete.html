@@ -1,0 +1,7 @@
+<h2> Are you going to delete this record. Are you sure?</h2>
+<form method="post">
+  {% csrf_token %}
+  {{ form }}
+  <br>
+  <button type="submit">Delete</button>
+</form>
